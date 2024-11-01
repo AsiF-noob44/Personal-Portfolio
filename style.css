@@ -30,6 +30,37 @@ html {
   border-bottom: 0.3rem solid #e41c6f;
   text-shadow: 0.3rem 0.3rem 0.5rem rgba(228, 28, 111, 0.8);
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e41c6f;
+  border-radius: 10px;
+  border: 2px solid #f4f4f4;
+  transition: background-color 0.3s ease, width 0.3s ease, box-shadow 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #c9155b;
+  width: 14px;
+  box-shadow: 0 0 8px rgba(228, 28, 111, 0.6);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #e41c6f #f4f4f4;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  scrollbar-color: #c9155b #f4f4f4;
+}
+
 /* End of Select and Common Styles */
 
 /* Section 1 */
